@@ -17,6 +17,8 @@ snsまとめ
 	- `ngrok http 8083`
 	- 取得したURLでlocal-snsが確認できる
 
+- サーバー実行
+	- php artisan serve
 ## 仕様
 - vue.jsでspa開発(フロントエンド)を行う
 - laravelでapi開発(バックエンド)を行う
@@ -29,14 +31,12 @@ snsまとめ
 
 
 ## メモ
-- laravel/uiインストール
-	`composer require laravel/ui`
-- laravel/ui vueインストール
-	`php artisan ui vue`
-	- いろいろ追加されるので、`npm install`で登録
-- Vue Routerインストール
-	`npm install --save vue-router`
-	- エラーがでたので、`npm -g update` アップデートを行う
-	- エラーが解除されないのでエラーメッセージに従いvueのバージョンを2→3に変更したらエラーが消えた
-	
+### 参考URL
+https://migisanblog.com/laravel-vue-install/#index_id1
+
+### Laravelのインストール
+composer create-project "laravel/laravel=8.*" laravel-vue-project --prefer-dist
+
+### laravel/uiのインストール
+composer require laravel/ui "1.x" --dev
 
