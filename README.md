@@ -39,4 +39,5 @@ composer create-project "laravel/laravel=8.*" laravel-vue-project --prefer-dist
 
 ### laravel/uiのインストール
 composer require laravel/ui "1.x" --dev
-
+### vueスカホールドのインストール
+php artisan ui vue
